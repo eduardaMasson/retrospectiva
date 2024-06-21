@@ -10,12 +10,36 @@
     --red: #9b0000;
     --yellow: #dfa23a;
     --white: white;
+    --gray: #c6e5df;
+    --red2: #c02d2d;
+    --black: black;
+    --yellow2: #f0f424;
 
 }
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: var(--red);
+
+}
+
+.text-alinhar {
+    text-align: justify;
+}
+
+.back-white {
+    background-color: var(--white);
+}
+
+.back-red {
+    background-color: var(--red2);
+}
+
+.back-gray {
+    background-color: var(--gray);
+}
+
+.back-yellow {
+    background-color: var(--yellow);
 }
 
 .img {
@@ -54,10 +78,12 @@ body {
     padding: 13px 30px;
     border-radius: 8px;
     margin: 20px;
+    background-color: var(--yellow);
+    color: var(--white);
 }
 
-.btn-mais {
-    background-color: var(--yellow);
+.btn:hover {
+    background-color: var(--red2);
     color: var(--white);
 }
 
@@ -85,4 +111,237 @@ body {
 
 .title {
     font-size: 55px;
+}
+
+.subtitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.img-comput {
+    width: 420px;
+}
+
+.sapo {
+    width: 300px;
+}
+
+.tamanho {
+    width: 400px;
+}
+
+.margin-red {
+    border: 2px solid var(--red);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid var(--yellow2);
+    margin: 45px;
+    text-align: center;
+}
+  
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: var(--black);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+  
+  .input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--black);
+}
+  
+  .input-field input:focus ~ label,
+  .input-field input:valid ~ label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}  
+
+footer{
+    margin-top: 40px;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.width {
+    font-size: 25px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.margin-buttom {
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 321px){
+    .d-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header {
+        width: 360px;
+        justify-content: space-between;
+    }
+
+    .plano{
+        height: 200px;
+        width: 360px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 26px;
+    }
+
+    .respon {
+        width: 360px;
+    }
+
+    footer {
+        width: 360px;
+    }
+
+    .img {
+        width: 100px;
+    }
+
+    .padding{
+       padding-right: 30px;
+    }
+
+    .tamanho {
+       width: 250px;
+    }
+
+    .sapo {
+        width: 250px;
+    }
+
+    .img-comput {
+        width: 300px;
+    }
+}
+
+@media (max-width: 376px){
+    .d-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header {
+        width: 375px;
+        justify-content: space-between;
+    }
+
+    .plano{
+        height: 200px;
+        width: 375px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 26px;
+    }
+
+    .respon {
+        width: 375px;
+    }
+
+    footer {
+        width: 375px;
+    }
+
+    .img {
+        width: 100px;
+    }
+
+    .padding{
+       padding-right: 30px;
+    }
+
+    .tamanho {
+       width: 250px;
+    }
+
+    .sapo {
+        width: 250px;
+    }
+
+    .img-comput {
+        width: 300px;
+    }
+}
+
+@media (max-width: 426px){
+    .d-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header {
+        width: 425px;
+        justify-content: space-between;
+    }
+
+    .plano{
+        height: 200px;
+        width: 425px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 26px;
+    }
+
+    .respon {
+        width: 425px;
+    }
+
+    footer {
+        width: 425px;
+    }
+
+    .img {
+        width: 100px;
+    }
+
+    .padding{
+       padding-right: 30px;
+    }
+
+    .tamanho {
+       width: 250px;
+    }
+
+    .sapo {
+        width: 250px;
+    }
+
+    .img-comput {
+        width: 300px;
+    }
 }
